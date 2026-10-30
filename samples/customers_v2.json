@@ -1,0 +1,39 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Customer Service",
+    "version": "2.0.0",
+    "description": "Updated Customer Management API with breaking changes"
+  },
+  "paths": {
+    "/customers": {
+      "get": {
+        "summary": "Get all customers",
+        "operationId": "getCustomers",
+        "responses": {
+          "200": {
+            "description": "Customer object",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer",
+                      "example": 1
+                    },
+                    "full_name": {
+                      "type": "string",
+                      "example": "Sugam"
+                    }
+                  },
+                  "required": ["id", "full_name"]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

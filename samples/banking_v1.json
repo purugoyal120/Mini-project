@@ -1,0 +1,42 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Core Banking Accounts Service",
+    "version": "1.0.0",
+    "description": "Legacy account management and balance checking API"
+  },
+  "paths": {
+    "/accounts": {
+      "get": {
+        "summary": "Retrieve bank account balance",
+        "operationId": "getAccount",
+        "responses": {
+          "200": {
+            "description": "Account details object",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "acc_no": {
+                      "type": "integer",
+                      "example": 884920
+                    },
+                    "holder": {
+                      "type": "string",
+                      "example": "Ashvary"
+                    },
+                    "balance": {
+                      "type": "number",
+                      "example": 54200.50
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

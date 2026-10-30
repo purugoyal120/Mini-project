@@ -1,0 +1,43 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "E-Commerce Items Service",
+    "version": "2.0.0",
+    "description": "Refactored Items Catalog API with breaking changes"
+  },
+  "paths": {
+    "/items": {
+      "get": {
+        "summary": "Retrieve catalog items",
+        "operationId": "getItems",
+        "responses": {
+          "200": {
+            "description": "Item object",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer",
+                      "example": 101
+                    },
+                    "item_name": {
+                      "type": "string",
+                      "example": "Wireless Mouse"
+                    },
+                    "price": {
+                      "type": "number",
+                      "example": 29.99
+                    }
+                  },
+                  "required": ["id", "item_name", "price"]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
