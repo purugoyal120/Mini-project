@@ -1,10 +1,4 @@
-"""
-Database Seeder for APIBridge AI
-Prepares THREE diverse real-world services across distinct business domains to prove 100% dynamic adaptability:
-1. API ID 1: 'User Management Service' (/users -> /customers, full_name -> name)
-2. API ID 2: 'E-Commerce Catalog Service' (/products -> /items, item_name -> title)
-3. API ID 3: 'Core Banking Accounts Service' (/accounts -> /wallets, wallet_id -> acc_no, client_name -> holder)
-"""
+
 
 import os
 import json
