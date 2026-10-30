@@ -1,11 +1,3 @@
-"""
-Database Seeder for APIBridge AI
-Prepares THREE diverse real-world services across distinct business domains to prove 100% dynamic adaptability:
-1. API ID 1: 'User Management Service' (/users -> /customers, full_name -> name)
-2. API ID 2: 'E-Commerce Catalog Service' (/products -> /items, item_name -> title)
-3. API ID 3: 'Core Banking Accounts Service' (/accounts -> /wallets, wallet_id -> acc_no, client_name -> holder)
-"""
-
 import os
 import json
 from pathlib import Path
@@ -83,10 +75,6 @@ cur.execute(
     (u_code, u_exp),
 )
 
-
-# =========================================================
-# SERVICE 2: E-Commerce Catalog Service
-# =========================================================
 cur.execute(
     "INSERT INTO apis (id, name, description) VALUES (2, 'E-Commerce Catalog Service', 'Online store products and inventory API')"
 )
@@ -132,10 +120,6 @@ cur.execute(
     (p_code, p_exp),
 )
 
-
-# =========================================================
-# SERVICE 3: Core Banking Accounts Service
-# =========================================================
 cur.execute(
     "INSERT INTO apis (id, name, description) VALUES (3, 'Core Banking Accounts Service', 'Financial accounts, balances, and digital wallets API')"
 )
