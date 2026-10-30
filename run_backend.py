@@ -1,13 +1,3 @@
-"""
-APIBridge AI - Quick Server Launcher
-Run this script to start the FastAPI server with hot-reload enabled.
-
-Command:
-    python run_backend.py
-or
-    .\\venv\\Scripts\\python.exe run_backend.py
-"""
-
 import uvicorn
 
 if __name__ == "__main__":
