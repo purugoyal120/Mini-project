@@ -27,9 +27,7 @@ cur.execute("DELETE FROM apis")
 
 samples_dir = Path("samples")
 
-# =========================================================
-# SERVICE 1: User Management Service
-# =========================================================
+
 cur.execute(
     "INSERT INTO apis (id, name, description) VALUES (1, 'User Management Service', 'Legacy User & Customer Management API')"
 )
